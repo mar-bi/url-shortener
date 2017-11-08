@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        URL Shortener Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h3 class="title">
+        User Stories
+      </h3>
+      <ol>
+        <li>I can pass URL as a parameter and I will receive a shortened URL
+          in the JSON response.
+        </li>
+        <li>If the URL does not follow the valid format <br>
+          <span class="code">http://www.exaple.com/</span> or
+          <span class="code">https://www.exaple.com/</span>,
+          the JSON response contains an error instead.
+        </li>
+        <li>I can visit the sortened URL, it will redirect me to my original
+          link.</li>
+      </ol>
+
+      <div>
+        <div>
+          <h3 class="title">
+            Examples of Usage
+          </h3>
+          <ul>
+            <li>Type 
+              <span class="code">
+                https://alert-punishment.glitch.me/api/shorten/https://github.com
+              </span>
+            </li>
+            <li>or 
+              <span class="code">
+                https://alert-punishment.glitch.me/api/shorten/http://www.google.com
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="title">
+            Example output
+          </h3>
+          <p class="output">
+            <span id="greentext">Success:</span> 
+          <span class="code">
+            { "long_url": "https://github.com", "short_url": "http://something-fancy.glitch.me/i4" }
+          </span> <br/> 
+          <span id="redtext">Error:</span> 
+          <span class="code">
+            { "error": "Wrong url format. Please enter a valid url", "exapmle": "http://www.exapmle.com" }
+          </span> 
+          </p>
+        </div>
+
+        <div>
+          <h3 class="title">
+            Example of usage
+          </h3>
+          <p class="output"> Type
+          <span class="code">https://alert-punishment.glitch.me/hY</span><br>
+          and you will be redirected to 
+          <span class="code">https://www.github.com/</span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

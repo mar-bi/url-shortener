@@ -1,0 +1,28 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "A NodeJS, Express, and MongoDB URL Shortening Service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mar-bi/url-shortener.git"
+  },
+  "author": "Marina Biletska",
+  "license": "MIT",
+  "keywords": [
+    "url-shortener",
+    "node",
+    "express",
+    "mongodb"
+  ]
+}
